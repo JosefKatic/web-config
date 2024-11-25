@@ -1,0 +1,8 @@
+<div class="wrapper">
+  @if (profile$ | async; as profile) {
+    <joka00-navbar [profile]="profile"></joka00-navbar>
+    <router-outlet></router-outlet>
+  } @else {
+    Loading...
+  }
+</div>

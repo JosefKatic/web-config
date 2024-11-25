@@ -1,0 +1,66 @@
+//@use "@angular/material" as mat;
+//@use "@angular/material-experimental" as matx;
+//@use "sass:map";
+//
+//@include mat.core();
+//
+//$palettes: (
+//  "red": matx.$m3-red-palette,
+//  "blue": matx.$m3-blue-palette,
+//  "yellow": matx.$m3-yellow-palette,
+//  "cyan": matx.$m3-cyan-palette,
+//  "magenta": matx.$m3-magenta-palette,
+//  "orange": matx.$m3-orange-palette,
+//  "chartreuse": matx.$m3-chartreuse-palette,
+//  "azure": matx.$m3-azure-palette,
+//  "rose": matx.$m3-rose-palette,
+//);
+//
+//$theme-map: ();
+//
+//// generates theme variables for each color and theme type combination and merges them into $theme-map
+//// output: $theme-map contains mappings of theme names to color themes for each palette in both dark and light modes
+//@each $theme in ("dark", "light") {
+//  @each $color, $palette in $palettes {
+//    $theme-name: "m3-#{$color}-#{$theme}-theme";
+//    $theme-map: map.merge(
+//        $theme-map,
+//        (
+//          $theme-name:
+//          matx.define-theme(
+//              (
+//                color: (
+//                  theme-type: $theme,
+//                  primary: $palette,
+//                ),
+//              )
+//          ),
+//        )
+//    );
+//  }
+//}
+//
+//// default theme (dark)
+//$m3-default-dark-theme: matx.define-theme(
+//    (
+//      color: (
+//        theme-type: dark,
+//        primary: matx.$m3-green-palette,
+//      ),
+//      // add density only for default theme config to avoid duplicated theming styles
+//      density:
+//      (
+//        scale: -1,
+//      ),
+//    )
+//);
+//
+//// default light theme
+//$m3-default-light-theme: matx.define-theme(
+//    (
+//      color: (
+//        theme-type: light,
+//        primary: matx.$m3-green-palette,
+//      ),
+//    )
+//);
